@@ -52,4 +52,22 @@ fun main() {
     for (snack in snacks) {
         println(snack)
     }
+
+    // searching for an item
+    println("Pringles in the list: ${snacks.contains("Pringles")}")
+    println("You are in the list: ${snacks.contains("You")}")
+
+    // Getting index of an item
+    println("Pringles index: ${snacks.indexOf("Pringles")}")
+    println("You're index: ${snacks.indexOf("You")}")
+
+    // loop using an index
+    for (i in 0..<snacks.size) {
+        println("$i: ${snacks[i]}")
+    }
+
+    for ((i, snack) in snacks.withIndex()) {
+        println("$i: ${snack}")
+    }
+
 }
